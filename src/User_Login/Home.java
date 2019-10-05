@@ -51,7 +51,7 @@ public class Home extends javax.swing.JFrame {
         jPanel2.add(jLabel4);
         jLabel4.setBounds(229, 119, 710, 82);
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrator\\Desktop\\ITP\\icons\\employee-card(9).png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/employee-card(9).png"))); // NOI18N
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,7 +66,7 @@ public class Home extends javax.swing.JFrame {
         jPanel2.add(jLabel1);
         jLabel1.setBounds(134, 705, 230, 28);
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrator\\Desktop\\ITP\\icons\\salary-male(1).png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/salary-male(1).png"))); // NOI18N
         jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,7 +81,7 @@ public class Home extends javax.swing.JFrame {
         jPanel2.add(jLabel2);
         jLabel2.setBounds(452, 705, 207, 28);
 
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrator\\Desktop\\ITP\\icons\\money(6).png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/money(6).png"))); // NOI18N
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,7 +96,7 @@ public class Home extends javax.swing.JFrame {
         jPanel2.add(jLabel5);
         jLabel5.setBounds(811, 705, 76, 28);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrator\\Desktop\\ITP\\32681740_1756104191099277_3378687489991507968_o.jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/32681740_1756104191099277_3378687489991507968_o.jpg"))); // NOI18N
         jLabel6.setText("jLabel6");
         jLabel6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel2.add(jLabel6);

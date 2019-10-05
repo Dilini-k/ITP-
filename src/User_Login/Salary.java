@@ -174,7 +174,6 @@ public class Salary extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         txt_sal = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -208,12 +207,14 @@ public class Salary extends javax.swing.JFrame {
         txt_salary = new javax.swing.JTextField();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrator\\Desktop\\ITP\\icons\\Zoom-icon.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Zoom-icon.png"))); // NOI18N
         jLabel1.setText("Employee:");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(688, 21, 107, 48);
@@ -316,13 +317,6 @@ public class Salary extends javax.swing.JFrame {
         jPanel1.add(txt_sal);
         txt_sal.setBounds(390, 470, 140, 40);
 
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("Worked days:");
-        jPanel1.add(jLabel9);
-        jLabel9.setBounds(860, 420, 118, 24);
-
         jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 0, 102));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -402,7 +396,7 @@ public class Salary extends javax.swing.JFrame {
         jPanel1.add(jLabel12);
         jLabel12.setBounds(1220, 480, 123, 24);
 
-        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrator\\Desktop\\ITP\\White-BG-Logo-01.png_2052721662.png")); // NOI18N
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/White-BG-Logo-01.png_2052721662.png"))); // NOI18N
         jPanel1.add(jLabel14);
         jLabel14.setBounds(30, 23, 144, 152);
 
@@ -563,6 +557,21 @@ public class Salary extends javax.swing.JFrame {
         });
         jPanel1.add(jButton7);
         jButton7.setBounds(40, 650, 140, 40);
+
+        jButton8.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(0, 0, 102));
+        jButton8.setText("Worked Days");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton8);
+        jButton8.setBounds(820, 410, 160, 40);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/dollar.jpg"))); // NOI18N
+        jPanel1.add(jLabel9);
+        jLabel9.setBounds(0, 0, 1850, 950);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -938,7 +947,7 @@ public class Salary extends javax.swing.JFrame {
                 
                 
                 Connection con=getConnection();
-                UpdateQuery="UPDATE sal_info SET sname=?,depart=?,gp=?,salary=?,days=?,leaves=?,takes=?,wdays=?,otime=?,totime=?,rate=?,bonus=?,other=?,deduction=?,amount=? "+" ,tsalary=? WHERE aid=?";
+                UpdateQuery="UPDATE sal_info SET sname=?,depart=?,gp=?,salary=?,days=?,leaves=?,taken=?,wdays=?,otime=?,totime=?,rate=?,bonus=?,other=?,deduction=?,amount=? "+" ,tsalary=? WHERE aid=?";
                  ps.setString(1, txt_name.getText());
                 ps.setString(2, txt_dep.getText());
                 ps.setString(3, txt_gp.getText());
@@ -969,6 +978,15 @@ public class Salary extends javax.swing.JFrame {
 
     
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        
+        float value=Float.parseFloat(txt_leaves.getText())-Float.parseFloat(txt_taken.getText());
+        txt_days1.setText(String.valueOf(value));
+        
+        
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1013,6 +1031,7 @@ public class Salary extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

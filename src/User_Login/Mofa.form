@@ -132,7 +132,7 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Administrator\Desktop\ITP\biofood logo.png"/>
+              <Image iconType="3" name="/image/biofood logo.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -526,7 +526,7 @@
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Administrator\Desktop\ITP\pwr.jpg"/>
+              <Image iconType="3" name="/image/pwr.jpg"/>
             </Property>
           </Properties>
           <Constraints>

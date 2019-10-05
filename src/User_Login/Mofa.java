@@ -240,7 +240,7 @@ public class Mofa extends javax.swing.JFrame {
         jPanel1.add(txt_id);
         txt_id.setBounds(250, 180, 340, 40);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrator\\Desktop\\ITP\\biofood logo.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/biofood logo.png"))); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(50, 20, 160, 140);
 
@@ -415,7 +415,7 @@ public class Mofa extends javax.swing.JFrame {
         jPanel1.add(jButton7);
         jButton7.setBounds(600, 490, 120, 40);
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrator\\Desktop\\ITP\\pwr.jpg")); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/pwr.jpg"))); // NOI18N
         jPanel1.add(jLabel10);
         jLabel10.setBounds(0, 160, 1680, 690);
 
